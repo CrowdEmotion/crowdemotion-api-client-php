@@ -73,7 +73,7 @@ class Timeseries implements ArrayAccess
         'end_index' => 'int',
         'step_size' => 'int',
         'custom_message' => 'string',
-        'data' => 'int[]'
+        'data' => 'float[]'
     );
 
     public static function swaggerTypes()
@@ -387,7 +387,7 @@ class Timeseries implements ArrayAccess
 
     /**
      * Gets data
-     * @return int[]
+     * @return float[]
      */
     public function getData()
     {
@@ -396,7 +396,7 @@ class Timeseries implements ArrayAccess
 
     /**
      * Sets data
-     * @param int[] $data
+     * @param float[] $data
      * @return $this
      */
     public function setData($data)
